@@ -3,14 +3,10 @@
 
 
 
-/* Portrait: a warm editorial frame with room for the original cutout. */
-.portrait-composition{width:240px;height:248px;margin:0 0 30px;isolation:isolate}
-.portrait-orbit{position:absolute;inset:14px -14px 16px;border:1px solid #e8c9b9;border-radius:50%;transform:rotate(-16deg);z-index:-1}
-.portrait-frame{position:absolute;inset:0 16px 10px;border-radius:105px 105px 30px 30px;background:radial-gradient(ellipse at 48% 35%,#fff4e5 0%,#f6decc 65%,#edc4ad 100%);border:6px solid #fffdf7;box-shadow:0 0 0 1px #e7dacc,0 14px 28px -12px #644a3938;overflow:hidden}
-.portrait-frame:after{content:'';position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 18px #b8865a0d;pointer-events:none}
-.portrait-frame img{display:block;position:absolute;width:100%;height:auto;max-width:none;left:0;top:7px}
-.portrait-spark{position:absolute;right:-1px;top:22px;font-size:34px;line-height:1;color:#e7825f;transform:rotate(12deg);text-shadow:0 2px #fff9f1}
-.portrait-note{position:absolute;bottom:0;left:50%;transform:translateX(-50%) rotate(-4deg);white-space:nowrap;display:flex;align-items:center;gap:8px;background:#fffefa;border:1px solid #e6ded2;border-radius:8px;padding:9px 13px;font-size:10px;font-weight:550;color:#646a5b;box-shadow:0 5px 12px #66513a12}
-.portrait-note>span{font-family:monospace;font-size:12px;color:#d77b56}
-.hero{padding-top:147px}
-@media(max-width:700px){.portrait-composition{width:208px;height:217px;margin-bottom:28px}.portrait-frame{inset:0 15px 9px;border-width:5px;border-radius:95px 95px 26px 26px}.portrait-orbit{inset:13px -8px 14px}.portrait-spark{right:0;top:20px;font-size:29px}.portrait-note{font-size:9px;padding:8px 11px}.hero{padding-top:151px;padding-bottom:40px}}
+/* A borderless portrait that fades into the hero's cream surface. */
+.portrait-composition{width:280px;height:242px;margin:0 0 18px;isolation:isolate;flex-shrink:0}
+.portrait-glow{position:absolute;inset:-18px -42px -6px;background:radial-gradient(ellipse at 50% 48%,#f1d5c2 0%,#f4e3d5 33%,#f8f7f300 69%);z-index:-1}
+.portrait-cutout{position:absolute;inset:0;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 64%,#000c 76%,#0004 89%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 64%,#000c 76%,#0004 89%,transparent 100%)}
+.portrait-cutout img{display:block;position:absolute;width:268px;max-width:none;height:auto;left:50%;top:-3px;transform:translateX(-50%);filter:saturate(.84) contrast(.97)}
+.hero{padding-top:150px}
+@media(max-width:700px){.portrait-composition{width:238px;height:215px;margin-bottom:16px}.portrait-cutout img{width:236px;top:0}.portrait-glow{inset:-10px -25px 0}.hero{padding-top:145px;padding-bottom:40px}}
