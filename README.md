@@ -18,7 +18,7 @@ pnpm preview
 
 Edit `src/main.jsx` for content and `src/style.css` for design. The resume is in `public/Bhavya-Antiya-Resume.pdf`. Project artwork is a labeled illustrative interface, not a screenshot of the original project. No testimonials or unsupported project URLs are included.
 
-Features: responsive navigation, expandable project details, accessible FAQ accordions, resume access, and email / LinkedIn / GitHub links.
+Features: responsive navigation, always-visible project details, accessible FAQ accordions, resume access, and email / LinkedIn / GitHub links.
 
 ## GitHub Pages
 
