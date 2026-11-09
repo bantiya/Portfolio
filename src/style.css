@@ -19,3 +19,14 @@
 .portrait-cutout img{display:block;position:absolute;width:100%;max-width:none;height:auto;left:50%;top:0;transform:translateX(-50%);filter:saturate(.84) contrast(.97)}
 @media(min-width:701px) and (max-width:1000px){.hero{min-height:670px;padding:150px 6% 65px}.hero-layout{grid-template-columns:1.25fr 1fr;gap:16px}.hero h1{font-size:40px;letter-spacing:-2px}.hero h1 em{letter-spacing:-2px}.hero p{font-size:12px}.portrait-composition{height:340px}.nav-links{gap:16px}nav>.button{white-space:nowrap;gap:10px}.logo{flex-shrink:0}.desktop-break{display:none}}
 @media(max-width:700px){.hero{min-height:0;padding:142px 7% 32px;text-align:left}.hero-layout{grid-template-columns:1fr;gap:26px}.hero h1{font-size:clamp(35px,9vw,48px);letter-spacing:-1.8px;margin:23px 0 20px}.hero h1 em{letter-spacing:-2px}.hero p{font-size:13px;line-height:1.85;max-width:350px}.hero .scroll-hint{margin-top:25px;font-size:9px}.portrait-composition{width:min(100%,290px);height:285px;justify-self:center;margin:0}.portrait-glow{inset:-12px -25px 0}.portrait-cutout img{width:100%;top:0}}
+
+/* The whole credential card links to its verification page. */
+.certification{max-width:370px;transform-origin:center;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.certification-copy{min-width:0;flex:1}
+.certification small{display:block;line-height:1.6}
+.certification-dates{display:grid;gap:4px;border-top:1px solid #eeeae2;padding-top:10px;margin-top:10px;font-size:10px;line-height:1.6;color:#7a7f70}
+.certification>span{flex-shrink:0}
+.certification .cert-star{align-self:flex-start;font-size:21px;line-height:1}
+.certification:focus-visible{border-color:#d8b18d;box-shadow:0 12px 24px #73573917}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.certification:hover{transform:translateY(-3px) scale(1.025);border-color:#d8b18d;box-shadow:0 12px 24px #73573917}}
+@media(prefers-reduced-motion:reduce){.certification{transition:none}.certification:hover{transform:none}}
